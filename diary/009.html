@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="ja" data-bs-theme="auto">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HSM7GE4GSN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HSM7GE4GSN');
+    </script>
+    <!-- /Google tag (gtag.js) -->
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3576404673920577"
+     crossorigin="anonymous"></script>
+    <!-- /Google AdSense -->
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>August, 2009|英語で日記を書いてみた|Diary|EBONITE DYNAMO</title>
+    <meta name="description" content="EBONITE DYNAMOは、70年代のUFOブーム、昭和アンダーグラウンド文化、ガジェット、日本美術（琳派）などを独自の視点で綴る個人ブログです。過去のカウンターカルチャーと現代のテクノロジーを横断し、考察します。">
+    <meta name="author" content="eiji nakai">
+    <link rel="canonical" href="https://getbootstrap.jp/docs/5.3/examples/blog/">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="icon" href="/img/ebonitedynamo_icon.svg" type="image/svg+xml"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+      </symbol>
+      <symbol id="cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </symbol>
+      <symbol id="chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </symbol>
+    </svg>
+    <div class="container">
+      <header class="border-bottom lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-2 pt-1">
+            <!-- 保留 -->
+          </div>
+          <div class="col-6 text-center">
+            <a class="blog-header-logo text-body-emphasis text-decoration-none lh-1" href="/index.html">
+              <div style="font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; font-size: 1.0em;">EBONITE DYNAMO</div>
+              <div class="text-muted" style="font-family: 'Hiragino Kaku Gothic Pro', 'メイリオ', sans-serif; font-size: 0.5em;">エボナイト・ダイナモ</div>
+            </a>
+          </div>
+          <div class="col-2 d-flex justify-content-end align-items-center">
+            <!-- 保留 -->
+          </div>
+        </div>
+      </header>
+      <div class="nav-scroller py-1 mb-3 border-bottom px-5">
+        <nav class="nav nav-underline justify-content-between">
+          <a class="nav-item nav-link link-body-emphasis" href="/index.html">トップページ</a>
+          
+            
+            <a class="nav-item nav-link link-body-emphasis" href="/ufo70s/index.html">UFO in '70s</a>
+          
+            
+            <a class="nav-item nav-link link-body-emphasis" href="/underground/index.html">Fight to Flight</a>
+          
+            
+            <a class="nav-item nav-link link-body-emphasis" href="/gadgets/index.html">ガジェットつれづれ</a>
+          
+            
+            <a class="nav-item nav-link link-body-emphasis" href="/psychedelic/index.html">無受想行識</a>
+          
+            
+            <a class="nav-item nav-link link-body-emphasis" href="/japaneseart/index.html">不識、喫茶去</a>
+          
+            
+            <a class="nav-item nav-link link-body-emphasis active" href="/diary/index.html">Diary</a>
+          
+          <a class="nav-item nav-link link-body-emphasis" href="/about/index.html">このサイトについて</a>
+        </nav>
+      </div>
+    </div>
+    <main class="container">
+      <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="position-relative overflow-hidden rounded">
+        
+          <img src="/diary/img/cover.jpg" alt="Cover Image" class="w-100" style="height: 220px; object-fit: cover;">
+        
+        <!-- 画像に重ねるテキスト -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-11 col-sm-9 col-md-7 col-lg-6">
+                <div class="bg-white bg-opacity-75 p-3 p-md-4 ms-2 ms-md-4 rounded shadow-sm">
+                  <div class="mb-1 fw-bold display-6 font-serif" style="color: #cc6600">Diary</div>
+                  <p class="lead mb-0 fs-5 fs-md-4" style="color: #cc6600">英語で日記を書いてみた</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="d-none d-md-block col-md-1"></div>
+    <div class="col-12 col-md-7">
+      <h1>August, 2009</h1>
+<div class="published">2026年1月9日</div>
+<h3>Woody Allen&#39;s movie</h3>
+
+<h4>August 1, 2009</h4>
+
+<p>I watched a movie the other day. The title is &quot;Vicky Cristina Barcelona&quot; directed by Woody Allen. I have not watched his work for a long time. I think he has become an old man rather than when I had known him once. When I watched his new movie, I enjoyed his unique describing human characteristics as well as before.</p>
+
+<p>For example, one of the main character women met a man in Barcelona where the story was set in. He was an artist and romanticist. He told her (and her friend) about sexuality, so she said that she hated him who was impolite at first, but they spend together sometimes. One day, her friends traveled from America to Barcelona and she met them (one of them is her finance). They told about how useful their new electric gadget was and so on. She heard their talking, but she seemed to be bored them. Maybe she thought it was a kind of snobbism and her new Barcelona friend had never told about such topics and more honest and innocent than them. She might feel some distance from not only her American friends but also realize a mediocre life of herself. Finally, it made her fall in love with him.</p>
+
+<p>However, romanticists maybe had their own burden. In his case, it was his wife’s passionate personality. She couldn’t help but involve with their emotional relationship and violent which is caused by it. She couldn’t endure such a situation, so she went back to her (mediocre) world.</p>
+
+<p>This movie described another women, but I focused to this woman here, because I sympathized her. She wanted to have a romantic experience in Barcelona while running away from her dull life, and she finally realized she should live her life. I think that she had known that both were a kind of fantasy. There is no mediocre world as well as no romantic world. I think that there are variety ways of life in the world. Therefore, she might have been going to proceed her own life while she got some power from Barcelona’s experience.</p>
+
+<p>I felt that the director described a theme of human life by weaving out from little details of human characteristics and activities. I like this movie.</p>
+
+    </div>
+    <div class="col-12 col-md-4 ps-0 ps-md-4">
+      <h4 class="px-3">記事一覧</h4>
+      <div id="sidebar-container" class="overflow-auto" style="height: 800px;">
+        <ul class="list-unstyled">
+          
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/index.html">
+                  
+                    <img src="img/038/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">March, 2026</h5>
+                    <small class="text-body-secondary">2026-03-01</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/037.html">
+                  
+                    <img src="img/037/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">February, 2026</h5>
+                    <small class="text-body-secondary">2026-02-22</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/036.html">
+                  
+                    <img src="img/036/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">January, 2026</h5>
+                    <small class="text-body-secondary">2026-01-29</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/035.html">
+                  
+                    <img src="img/035/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">October, 2019</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/034.html">
+                  
+                    <img src="img/034/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">September, 2019</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/033.html">
+                  
+                    <img src="img/033/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">February, 2019</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/032.html">
+                  
+                    <img src="img/032/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">December, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/031.html">
+                  
+                    <img src="img/031/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">November, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/030.html">
+                  
+                    <img src="img/030/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">October, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/029.html">
+                  
+                    <img src="img/029/01.jpg" alt="Thumbnail" width="80" height="80" style="object-fit: cover;" class="rounded">
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">September, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/028.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">July, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/027.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">June, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/026.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">May, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/025.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">April, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/024.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">March, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/023.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">February, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/022.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">January, 2018</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/021.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">November, 2017</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/020.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">July, 2017</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/019.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">June, 2017</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/018.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">May, 2017</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/017.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">November, 2012</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/016.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">May, 2012</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/015.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">November, 2011</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/014.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">May, 2011</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/013.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">September, 2010</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/012.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">March, 2010</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/011.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">December, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/010.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">October, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li id="active-article" class="border-start border-4 border-primary ps-1">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/009.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">August, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/008.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">April, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/007.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">March, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/006.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">February, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/005.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">January, 2009</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/004.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">December, 2008</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/003.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">November, 2008</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/002.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">October, 2008</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+              <li class="ps-1" style="margin-left: 4px;">
+                <a class="d-flex flex-row gap-3 align-items-center py-1 link-body-emphasis text-decoration-none border-top" href="/diary/001.html">
+                  
+                    <svg class="bd-placeholder-img" width="80" height="80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                  
+                  <div class="flex-grow-1">
+                    <h5 class="mb-0">September, 2008</h5>
+                    <small class="text-body-secondary">2026-01-09</small>
+                  </div>
+                </a>
+              </li>
+            
+          
+        </ul>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const activeArticle = document.getElementById('active-article');
+          const sidebarContainer = document.getElementById('sidebar-container');
+          if (activeArticle && sidebarContainer) {
+            // Wait a bit for everything to settle
+            setTimeout(() => {
+              sidebarContainer.scrollTop = activeArticle.offsetTop - sidebarContainer.offsetTop;
+            }, 100);
+          }
+        });
+      </script>
+    </div>
+  </div>
+</div>
+    </main>
+    <footer class="p-5 text-white-50 bg-black small">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mb-2">
+          <h2>EBONITE DYNAMO</h2>
+          <p>EBONITE DYNAMOは個人運営のブログです。いかなる組織・団体とも関係はありません。掲載情報の正確性には細心の注意を払っておりますが、内容を保証するものではありません。万一、本サイトの利用により損害が発生した場合、責任を負いかねますのでご了承ください。</p>
+          <p><a href="/about/index.html">このサイトについて</a></p>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-2">
+          <h4>Categories</h4>
+          <ul class="list-unstyled">
+            
+              <li><a href="/ufo70s/index.html">UFO in '70s</a>&nbsp;&nbsp;ーー<small>1970年代のUFOブームについて</small></li>
+            
+              <li><a href="/underground/index.html">Fight to Flight</a>&nbsp;&nbsp;ーー<small>闘争から逃走へー昭和アンダーグラウンド文化について</small></li>
+            
+              <li><a href="/gadgets/index.html">ガジェットつれづれ</a>&nbsp;&nbsp;ーー<small>ガジェットについて</small></li>
+            
+              <li><a href="/psychedelic/index.html">無受想行識</a>&nbsp;&nbsp;ーー<small>ゼロ年代の変性意識文化について</small></li>
+            
+              <li><a href="/japaneseart/index.html">不識、喫茶去</a>&nbsp;&nbsp;ーー<small>日本画と文化について</small></li>
+            
+              <li><a href="/diary/index.html">Diary</a>&nbsp;&nbsp;ーー<small>英語で日記を書いてみた</small></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-12 mb-2">
+          <ol class="list-unstyled">
+            <h4>Site &amp; SNS</h4>
+            <li><a href="https://www.smallmake.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                </svg>
+                Smallmake
+              </a></li>
+            <li><a href="https://gist.github.com/smallmake" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+                GitHub
+              </a></li>
+            <li><a href="https://x.com/eijinakai" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                </svg>
+                X.com
+              </a></li>
+            <li><a href="https://www.facebook.com/eiji.nakai" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                Facebook
+              </a></li>
+          </ol>
+        </div>
+      </div>
+      <!-- -->
+      <div class="text-center pt-1" style="border-top: 1px solid #333;">
+        <p>© 2026 Ebonite Dynamo. All rights reserved.<br />
+          Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/color-modes.js"></script>
+  </body>
+</html>
