@@ -191,6 +191,40 @@ code pre {
   z-index: 1500;
 }
 
+.site-footer {
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+.site-footer a {
+  color: #495057;
+}
+
+.site-footer a:hover {
+  color: #212529;
+}
+
+.site-footer-divider {
+  border-top: 1px solid #ced4da;
+}
+
+[data-bs-theme="dark"] .site-footer {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+[data-bs-theme="dark"] .site-footer a {
+  color: var(--bs-link-color);
+}
+
+[data-bs-theme="dark"] .site-footer a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+[data-bs-theme="dark"] .site-footer-divider {
+  border-top-color: #333;
+}
+
 footer h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
